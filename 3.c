@@ -31,7 +31,7 @@ void dequeue(Queue*q){
     if(q->front==-1 && q->rear==-1){
         printf("Empty queue");
         return;
-    }else if(q->front==(q->rear + 1)%capacity){
+    }else if(q->front==q->rear){
         q->rear=q->front=-1;
     }else{
         printf("%d\n",q->arr[q->front]);
