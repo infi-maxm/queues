@@ -36,8 +36,8 @@ void dequeue(Queue*q){
         printf("Queue is empty");
         return;
     }else{
-    printf("%d\n",q->arr[q->front]);
-    q->front=q->front+1;
+        printf("%d\n",q->arr[q->front]);
+        q->front=q->front+1;
     }
 }
 

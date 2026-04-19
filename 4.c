@@ -66,7 +66,9 @@ int main(){
     initQueue(&q);
     enqueue(&q,10);
     enqueue(&q,20);
-    dequeue(&q);
+    enqueue(&q,30);
+    printf("%dn",dequeue(&q));
+    printf("%d\n",dequeue(&q));
 
     return 0;
 }
